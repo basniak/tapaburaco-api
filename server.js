@@ -31,4 +31,6 @@ require('./src/models/Post_Report');
 
 app.use('/api', require("./src/routes"));
 
-app.listen(27017);
+
+const port = process.env.PORT || 3000
+app.listen(port);
