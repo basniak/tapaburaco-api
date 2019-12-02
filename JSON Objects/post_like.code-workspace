@@ -1,0 +1,27 @@
+[
+    {
+        "_id":,
+        "user_id": 1,
+        "post_id": 2
+    }
+    {
+        "_id":,
+        "user_id": 2,
+        "post_id": 1
+    }
+    {
+        "_id":,
+        "user_id": 3,
+        "post_id": 2
+    }
+    {
+        "_id":,
+        "user_id": 4,
+        "post_id": 2
+    }
+    {
+        "_id":,
+        "user_id": 3,
+        "post_id": 1
+    }
+]

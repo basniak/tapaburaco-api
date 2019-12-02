@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Barrett",
+        "lastname": "Hester",
+        "user_email": "ut.nulla@liberoIntegerin.org",
+        "user_password": "82921",
+        "user_birthday": "2000-11-11T03:00:00.000Z",
+        "user_adress": "Cornélio Procópio",
+        "user_image": "perfil1.jpg",
+        "user_type": "1"
+    },
+    {
+        "name": "Serena",
+        "lastname": "Joyner",
+        "user_email": "placerat.augue.Sed@inmolestie.co.uk",
+        "user_password": "475684",
+        "user_birthday": "1995-09-11T03:00:00.000Z",
+        "user_adress": "Cornélio Procópio",
+        "user_image": "perfil2.jpg",
+        "user_type": "1"
+    },
+    {
+        "name": "Vincent",
+        "lastname": "Kirby",
+        "user_email": "ut.pharetra.sed@Pellentesquehabitant.edu",
+        "user_password": "142587",
+        "user_birthday": "1989-12-05T03:00:00.000Z",
+        "user_adress": "Cornélio Procópio",
+        "user_image": "perfil3.jpg",
+        "user_type": "1"
+    },
+    {
+        "name": "Phillip",
+        "lastname": "Burton",
+        "user_email": "sit.amet@inmagna.org",
+        "user_password": "68532",
+        "user_birthday": "1994-01-01T03:00:00.000Z",
+        "user_adress": "Cornélio Procópio",
+        "user_image": "perfil4.jpg",
+        "user_type": "1"
+    }
+]

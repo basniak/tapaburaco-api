@@ -39,7 +39,7 @@ routes.delete("posts/:id", PostController.deletepostbyid);
 
 //Rotas de Comentários
 
-routes.get("/comments/:post_id", CommentController.getallcommentsbypostid);
+routes.get("/comments/:post_id", CommentController.createcomment);
 
 routes.post("/comments", CommentController.createcomment);
 

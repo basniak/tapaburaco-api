@@ -1,0 +1,38 @@
+[
+    {
+        "user_id": 1,
+        "post_date": "2019-11-11T03:00:00.000Z",
+        "post_loc": "Rua Santos Dumont",
+        "post_text": "Uma arvore caiu estourou os cabos de energia, estamos sem energia.",
+        "post_like": 3,
+        "post_solved": 0,
+        "post_com": 0
+    },
+    {
+        "user_id": 2,
+        "post_date": "2019-11-11T03:00:00.000Z",
+        "post_loc": "Avenida XV de Novembro",
+        "post_text": "Muitos buracos proximo ao cruzamento com a Alberto Carazzai",
+        "post_like": 4,
+        "post_solved": 0,
+        "post_com": 0
+    },
+    {
+        "user_id": 3,
+        "post_date": "2019-11-11T03:00:00.000Z",
+        "post_loc": "Avenida São Paulo",
+        "post_text": "Boeiro entupido, o cheiro de esgoto está muito forte",
+        "post_like": 2,
+        "post_solved": 1,
+        "post_com": 1
+    },
+    {
+        "user_id": 4,
+        "post_date": "2019-11-11T03:00:00.000Z",
+        "post_loc": "Rua Paraná",
+        "post_text": "O semáforo não estava funcionando hoje de manhã",
+        "post_like": 2,
+        "post_solved": 2,
+        "post_com": 0
+    }
+]x

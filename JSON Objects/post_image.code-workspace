@@ -1,0 +1,22 @@
+[
+    {
+        "_id":,
+        "post_id": 1,
+        "image": "https://raw.githubusercontent.com/GuMarques/tapaburaco-api/master/JSON%20Objects/perfil1.jpg"
+    }
+    {
+        "_id":,
+        "post_id": 2,
+        "image": "https://raw.githubusercontent.com/GuMarques/tapaburaco-api/master/JSON%20Objects/post2.jpg"
+    }
+    {
+        "_id":,
+        "post_id": 3,
+        "image": "https://raw.githubusercontent.com/GuMarques/tapaburaco-api/master/JSON%20Objects/post3.jpg"
+    }
+    {
+        "_id":,
+        "post_id": 4,
+        "image": "https://raw.githubusercontent.com/GuMarques/tapaburaco-api/master/JSON%20Objects/post4.jpg"
+    }
+]
