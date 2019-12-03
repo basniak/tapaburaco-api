@@ -5,12 +5,14 @@ const User = mongoose.model('User');
 module.exports = {
     async getallusers(req, res) {
         const users = await User.find();
-
-        return res.json(users);
+        if (user) {
+            return res.json(users);
+        }
+        else { return req.error({ error: 'usario nao encontrado' }) }
     },
 
     async getuserbyid(req, res) {
-        const user = await User.findById(req.params.id);
+        const user = await User.findOne({ uid: req.query.id });
 
         return res.json(user);
     },
@@ -21,10 +23,15 @@ module.exports = {
         return res.json(user);
     },
 
-    async createuser(req, res) {
-        const user = await User.create(req.body);
-
-        return res.json(user);
+    async createuser(req, res, next) {
+        console.log('createuser',req.body)
+        return User.create(req.body, (err, data) => {
+            if (err) {
+                console.log(err);
+                console.log(new Date().toLocaleString(), err.messagem);
+                next(err);
+            } else res.json(data);
+        })
     },
 
     async updateuserbyid(req, res) {

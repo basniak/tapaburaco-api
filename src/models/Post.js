@@ -26,18 +26,21 @@ const PostSchema = new mongoose.Schema({
 
   post_like: {
     type: Number,
-    required: true
-  },
 
+    default: 0
+  },
   post_solved: {
     type: Number,
-    required: true
+    default: 0
   },
-
   post_com: {
     type: Number,
-    required: true
-  }
-});
+    default: 0
+  },
+  isDeleted: { type: Boolean, default: false },
+  createdon: { type: Date, default: Date.now },
+  modifiedon: { type: Date, default: Date.now() },
+}, { timestamps: true });
+
 
 mongoose.model("Post", PostSchema);

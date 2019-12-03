@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Add headers
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Credentials", "true");
   res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
@@ -17,14 +17,14 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.options("*", function(req, res, next) {
+app.options("*", function (req, res, next) {
   if (req.method == "OPTIONS")
     // res.status(200);
     res.sendStatus(200);
 });
 
 //Iniciando Banco de Dados
-
+mongoose.set('debug', true)
 mongoose
   .connect(
     "mongodb://basniak:tapaburacobanco@cluster0-shard-00-00-jg4cf.mongodb.net:27017,cluster0-shard-00-01-jg4cf.mongodb.net:27017,cluster0-shard-00-02-jg4cf.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
@@ -54,7 +54,7 @@ require("./src/models/Post_Report");
 //Rotas
 
 app.use("/api", require("./src/routes"));
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   let err = new Error("Not found");
   err.status = 404;
   next(err);

@@ -10,7 +10,7 @@ module.exports = {
   },
 
   async createcomment(req, res) {
-    const comment = await Comment.create(req.body);
+    const comment = await Comment.create(res.body);
 
     return res.json(comment);
   },

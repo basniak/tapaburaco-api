@@ -67,7 +67,7 @@ module.exports = {
   },
 
   async createpost(req, res) {
-    const post = await Post.create(body);
+    const post = await Post.create(req.body);
 
     return res.json(post);
   }
