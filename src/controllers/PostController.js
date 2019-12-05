@@ -39,6 +39,14 @@ module.exports = {
           foreignField: "post_id",
           as: "solveds"
         }
+      },
+      {
+        $lookup: {
+          from: "likes",
+          localField: "_id",
+          foreignField: "post_id",
+          as: "likes"
+        }
       }
     ]);
     return req.json(post);

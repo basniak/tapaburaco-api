@@ -10,7 +10,7 @@ module.exports = {
     },
     async createlike(req, res, next) {
         // console.log(req.body)
-        return Solved.create(req.body, (err, data) => {
+        return Like.create(req.body, (err, data) => {
             if (err) {
                 console.log(err)
                 next(err)
