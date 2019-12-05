@@ -8,11 +8,16 @@ module.exports = {
 
         return res.json(likes);
     },
-
-    async createlike(req, res) {
-        const like = await Like.create(req.body);
-
-        return res.json(like);
+    async createlike(req, res, next) {
+        // console.log(req.body)
+        return Solved.create(req.body, (err, data) => {
+            if (err) {
+                console.log(err)
+                next(err)
+            } else {
+                res.json(data)
+            }
+        });
     },
 
     async updatelikebyid(req, res) {
