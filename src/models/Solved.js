@@ -3,12 +3,14 @@ const mongoose = require('mongoose');
 const SolvedSchema = new mongoose.Schema({
 
     user_id: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
         required: true,
     },
 
     post_id: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Posts",
         required: true,
     },
 });
