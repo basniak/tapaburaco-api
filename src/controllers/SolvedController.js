@@ -9,11 +9,18 @@ module.exports = {
         return res.json(solveds);
     },
 
-    async createsolved(req, res) {
-        const solved = await Solved.create(req.body);
-
-        return res.json(solved);
+    async createsolved(req, res, next) {
+        // console.log(req.body)
+        return Solved.create(req.body, (err, data) => {
+            if (err) {
+                console.log(err)
+                next(err)
+            } else {
+                res.json(data)
+            }
+        });
     },
+
 
     async updatesolvedbyid(req, res) {
         const solved = await Solved.findByIdAndUpdate(req.params.id, req.body, { new: true });

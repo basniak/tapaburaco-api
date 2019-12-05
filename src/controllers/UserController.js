@@ -27,7 +27,7 @@ module.exports = {
         console.log('createuser',req.body)
         return User.create(req.body, (err, data) => {
             if (err) {
-                console.log(err);
+                // console.log(err);
                 console.log(new Date().toLocaleString(), err.messagem);
                 next(err);
             } else res.json(data);

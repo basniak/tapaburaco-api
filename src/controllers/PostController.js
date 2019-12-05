@@ -23,6 +23,22 @@ module.exports = {
           foreignField: "post_id",
           as: "comentarios"
         }
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "comentarios.user_id",
+          foreignField: "_id",
+          as: "comentarios_user"
+        }
+      },
+      {
+        $lookup: {
+          from: "solveds",
+          localField: "_id",
+          foreignField: "post_id",
+          as: "solveds"
+        }
       }
     ]);
     return req.json(post);
